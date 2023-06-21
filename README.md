@@ -215,3 +215,10 @@ If you use this code in your research, cite via the following BibTeX:
   year={2019}
 }
 ```
+
+## Container
+To use Docker containers, try in project root path:
+```
+docker build -t wavegan:v1 .
+docker run -v ${PWD}:/wavegan -w /wavegan -ti wavegan:v1 bash
+```
